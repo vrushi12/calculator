@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Micro+5&display=swap" rel="stylesheet">
+    <style>
+        .calculator-body
+        {
+          height:385px;
+          width:260px;
+          border: 2px solid rgb(116, 85, 116);
+          background-color: rgb(252, 196, 205);  
+          margin:30px auto;
+          border-radius: 20px;
+          padding: 20px;
+          padding-top: 40px;
+        }
+
+        .screen
+        {
+          background-color: #a1af77;
+          border-radius: 3px;
+          text-align: right;
+          width: 220px;
+          display: block;
+          margin: 0px auto;
+          font-size: 30px;
+          padding: 5px 10px;
+          margin-bottom: 20px;
+          font-family: "Micro 5", sans-serif;
+        }
+
+        .container1
+        {
+          width:50px;
+          margin: 1px auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .container-btn
+        {
+          border-radius: 1px 5px 1px 5px;
+          background-color: rgb(184, 135, 184);
+          border:2px solid rgb(116, 85, 116);
+        }
+
+        .container2
+        {
+          width: 95px;
+          margin: 1px auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: centre;
+        }
+
+        .container3
+        {
+          width:50px;
+          margin: 1px auto;
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .buttons-container1
+        {
+          display: flex;
+          margin-bottom: 15px;
+          flex-direction: column;
+          height: 90px;
+          flex-wrap: wrap;
+          margin-top: 15px;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .btn1
+        {
+          background-color: rgb(216, 169, 195);
+          border-radius: 2px;
+          border:1px solid rgb(148, 117, 134);
+          width: 27px;
+          height: 21px;
+          font-size: 10PX;
+          text-align: center;
+          padding: 2px;
+          margin: 3px;
+        }
+    
+        .buttons-container2
+        {
+          display: flex;
+          flex-direction: column;
+          height: 120px;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .btn2
+        {
+          background-color: rgb(184, 135, 184);
+          border-radius: 5px;
+          border:2px solid rgb(116, 85, 116);
+          width: 40px;
+          height: 23px;
+          text-align: center;
+          padding: 2px;
+          margin: 3px;
+        }
+
+        .special-btn
+        {
+          background-color: rgb(240, 240, 162);
+          border: 2px solid rgb(160, 160, 85);
+          border-radius: 5px;
+          width: 40px;
+          height: 23px;
+          text-align: center;
+          padding: 2px;
+          margin: 3px;
+        }
+
+    </style>
+
+</head>
+<body>
+  <div class="calculator-body">
+        <input type="text" value="00" class="screen"/>
+
+      <div class="container1">
+         <div>
+          <button class="container-btn"> <img src="up-arrow.png" height="10px"/> </button>
+         </div>
+      </div>
+
+      <div class="container2">
+         <div>
+           <button class="container-btn"> <img src="left-arrow.png" height="10px"/> </button>
+         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div>
+          <button class="container-btn"> <img src="right-arrow.png" height="10px"/> </button>
+        </div>
+      </div>
+       
+      <div class="container3">
+         <div>
+          <button class="container-btn"> <img src="down-arrow.png" height="10px"/> </button>
+         </div>
+     </div>
+    
+     <div class="buttons-container1">
+        <button class="btn1">X <sup>2</sup></button>
+        <button class="btn1">%</button>
+        <button class="btn1">(</button>
+
+        <button class="btn1">)</button>
+        <button class="btn1">log</button>
+        <button class="btn1">ln</button>
+
+        <button class="btn1">sin</button>
+        <button class="btn1">cos</button>
+        <button class="btn1">tan</button>
+
+        <button class="btn1">ENG</button>
+        <button class="btn1">RCL</button>
+        <button class="btn1">M+</button>
+
+        <button class="btn1">hyp</button>
+        <button class="btn1">X <sup>3</sup></button>
+        <button class="btn1">OFF</button>
+
+        <button class="special-btn">ON</button>
+        <button class="btn1">nCr</button>
+        <button class="btn1">CLR</button>
+     </div>
+
+    <div class="buttons-container2">
+      <button class="btn2">7</button>
+      <button class="btn2">4</button>
+      <button class="btn2">1</button>
+      <button class="btn2">0</button>
+
+      <button class="btn2">8</button>
+      <button class="btn2">5</button>
+      <button class="btn2">2</button>
+      <button class="btn2">.</button>
+
+      <button class="btn2">9</button>
+      <button class="btn2">6</button>
+      <button class="btn2">3</button>
+      <button class="btn2">*10<sup>x</sup></button>
+
+      <button class="special-btn">DEL</button>
+      <button class="btn2">*</button>
+      <button class="btn2">+</button>
+      <button class="btn2">ANS</button>
+
+      <button class="special-btn">AC</button>
+      <button class="btn2">/</button>
+      <button class="btn2">-</button>
+      <button class="btn2">=</button>
+    </div>
+
+    </div>
+  </body>
+</html>
